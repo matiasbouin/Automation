@@ -20,23 +20,23 @@ text = ppc.paste()
 
 
 number_pattern = re.compile(r'''(
-                (\W{1})?                       #Symbol
-                (\d{2}|\d{3}|\d{4})?     #International area code
-                (\s|-|\.)?                        #Space  
-                (\d{2}|\d{4})?              #National area code 
+                (\W{1})?                   #Symbol
+                (\d{2}|\d{3}|\d{4})?       #International area code
+                (\s|-|\.)?                 #Space  
+                (\d{2}|\d{4})?             #National area code 
                 (\s|-|\.)?
-                (\d{4})                         #First 4 numbers
+                (\d{4})                    #First 4 numbers
                 (\s|-|\.)?           
-                (\d{4})                         #Last 4 numbers
+                (\d{4})                    #Last 4 numbers
                 )''', re.VERBOSE)
 
 
 mail_pattern = re.compile(r'''(
-                (\w+)                           #First part of mail address
-                (@)                              #@
-                (\w+)                           #Seconds part of mail address
-                (.com)                         #.com 
-                (.\w{2})?                     #Optional 
+                (\w+)                       #First part of mail address
+                (@)                         #@
+                (\w+)                       #Seconds part of mail address
+                (.com)                      #.com 
+                (.\w{2})?                   #Optional 
                 )''',re.VERBOSE | re.I)
 
 
