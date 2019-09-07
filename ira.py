@@ -1,4 +1,8 @@
 #! python3
+'''
+Script to fin a google location on the go, with sys argv
+Run with address as sys argv
+'''
 
 import webbrowser, sys, pyperclip as ppc
 
